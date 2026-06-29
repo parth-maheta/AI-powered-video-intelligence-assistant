@@ -37,6 +37,12 @@ watchdog>=4.0.0                   # File-change watcher (improves Streamlit hot-
 reportlab>=4.2.0                  # PDF generation
 fpdf2>=2.7.9                      # Lightweight alternative PDF library
 
+# ── FastAPI Web UI Backend ─────────────────────────────────────────────────
+fastapi>=0.111.0                  # Async API framework with WebSocket support
+uvicorn[standard]>=0.30.0         # ASGI server for FastAPI
+python-multipart>=0.0.9           # File upload support for FastAPI
+websockets>=12.0                  # WebSocket protocol implementation
+
 # ── Utilities ─────────────────────────────────────────────────────────────────
 python-dotenv>=1.0.0              # Load API keys from .env
 numpy>=1.26.0

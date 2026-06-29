@@ -12,6 +12,10 @@ env/
 # ── Environment / Secrets ────────────────────────────────────────────────────
 .env
 .env.*
+!.env.example
+
+# ── Agent / Gemini config ────────────────────────────────────────────────────
+.gemini/
 
 # ── Downloads (runtime-generated audio files) ────────────────────────────────
 downloads/
@@ -32,3 +36,10 @@ desktop.ini
 dist/
 build/
 *.egg-info/
+
+# ── Frontend (Vite + React) ──────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+
+# ── Vector DB (runtime-generated) ────────────────────────────────────────
+vector_db/

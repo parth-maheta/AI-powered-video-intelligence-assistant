@@ -52,7 +52,9 @@ def generate_title(transcript:str)-> str:
 
     title_prompt=ChatPromptTemplate.from_messages(
         [
-            ("system","You are a helpful assistant that generates a professional title for a transcript.Based on the transcript, generate a concise and professional title that accurately reflects the content of the transcript."),
+            ("system", "You are a helpful assistant that generates a professional title for a transcript. "
+                       "Based on the transcript, generate a concise and professional title that accurately reflects the content. "
+                       "CRITICAL INSTRUCTION: You MUST return ONLY the title text. Do NOT include markdown formatting, bolding, quotes, conversational padding (e.g. 'Here is the title:'), or reasoning."),
             ("human","{text}")
         ]
     )
